@@ -17,7 +17,6 @@
 
         h1:hover, h2:hover, h3:hover, h4:hover, p:hover {
             transform: translateY(-5px); /* Slightly lift text on hover */
-            color: #a855f7; /* Change color on hover */
         }
 
         header {
@@ -84,7 +83,6 @@
 
         button:hover {
             transform: scale(1.1); /* Slightly increase button size */
-            background-color: #9333ea; /* Change background color on hover */
             box-shadow: 0 0 20px rgba(168, 85, 247, 0.6); /* Add shadow */
         }
 
@@ -99,14 +97,55 @@
             transform: translateX(5px); /* Slightly shift link to the right */
         }
 
-        .skillrate {
-            height: 20px;
-            width: 1000px;
-            background-color: #a855f7;
-            opacity: 0.6;
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
+/* .skill {
+    background-color: #1e1e2f;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
+    color: #e0d1ff;
+  }
 
+  .skill ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .skill li {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+  .skillrate {
+    height: 20px;
+    background-color: #a855f7;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+    opacity: 0.6;
+    color: white;
+    margin-bottom: 15px;
+    width: 0;
+    transition: width 2s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .skillrate center {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    line-height: 20px;
+    font-weight: bold;
+    user-select: none;
+  } */
+
+
+        .skillrate:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.8);
+            background-color: #9333ea;
+            color: #fff;
+        }
         .slider-box {
             position: relative;
             max-width: 800px;
@@ -152,26 +191,29 @@
 
         .buttoncontainer {
             display: inline-flex;
+            position: fixed;
+            top: 10px;               /* space from top */
+            left: 50%;               /* start at 50% horizontally */
+            transform: translateX(-50%);  /* shift back 50% of own width to center */
             gap: 10px;
             padding: 10px 20px;
             background-color: rgba(168, 85, 247, 0.4);
             border-radius: 999px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-top: 10px;
             transition: transform 0.3s ease, background-color 0.3s ease;
+            z-index: 1000;
         }
 
         .buttoncontainer:hover {
-            transform: translateY(-5px); /* Lift the container */
             background-color: rgba(168, 85, 247, 0.6); /* Change background on hover */
         }
 
         .aboutme {
             text-wrap: wrap;
         }
-.footerimage img {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    object-fit: cover; /* Ensures image maintains aspect ratio while filling the container */
-}
+        .footerimage img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            object-fit: cover; /* Ensures image maintains aspect ratio while filling the container */
+        }

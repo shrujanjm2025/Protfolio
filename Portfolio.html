@@ -8,16 +8,16 @@
 </head>
 <body>
     <script src="PortfolioScript.js"></script>
-    <header>
+    <header id="header">
         <h1>PORTFOLIO</h1>
     </header>
 
     <center>
         <div class="buttoncontainer">
-            <button>Profile</button>
-            <button>About Me</button>
-            <button>My Skills</button>
-            <button>Contact Info</button>
+            <button onclick="scrollToProfile()">Profile</button>
+            <button onclick="scrollToAboutme()">About Me</button>
+            <button onclick="scrollToMyskills()">My Skills</button>
+            <button onclick="scrollToContactinfo()">Contact Info</button>
         </div>
     </center>
 
@@ -27,11 +27,10 @@
     <center><h2>INDIA</h2></center>
 
     <center>
-        <img src="C:\Users\Jadesh M\Documents\Shrujan J M1\Downloads\IMG_20231112_192734530~2 (2).png">
+        <img src="C:\Users\Jadesh M\Documents\Shrujan J M1\Desktop\RanchoLabs Web Development\VS Code\Media\IMG_20231112_192734530~2 (2).png">
     </center>
 
-    <div class="skill">
-        <div class="aboutme">
+        <div class="aboutme" id="aboutme">
             <center><h2>About Me</h2></center>
             <p>
                 Hi, I'm a passionate web designer and developer with a love for creativity and technology.<br><br>
@@ -56,17 +55,79 @@
 </p>
         </div>
 
-        <div class="skill">
-        <center><h2>My Skills</h2></center>
-        <li>Dancing</li><div class="skillrate"></div>
-        <li>Singing</li><div class="skillrate"></div>
-        <li>Web Development</li><div class="skillrate"></div>
-        <li>Art</li><div class="skillrate"></div>
-        <li>Robotics</li><div class="skillrate"></div>
-        <li>Music</li><div class="skillrate"></div>
-        <li>Sports</li><div class="skillrate"></div>
-    </div>
-        </div>
+        <!-- Replace your existing skill section with this -->
+<!-- Skill Section HTML -->
+<div class="skill" id="myskills">
+  <center><h2>My Skills</h2></center>
+  <ul>
+    <li>Dancing</li>
+    <div class="skillrate" data-width="34%" style="width: 0;"><center>34%</center></div>
+
+    <li>Singing</li>
+    <div class="skillrate" data-width="21%" style="width: 0;"><center>21%</center></div>
+
+    <li>Web Development</li>
+    <div class="skillrate" data-width="29%" style="width: 0;"><center>29%</center></div>
+
+    <li>Art</li>
+    <div class="skillrate" data-width="52%" style="width: 0;"><center>52%</center></div>
+
+    <li>Robotics</li>
+    <div class="skillrate" data-width="47%" style="width: 0;"><center>47%</center></div>
+
+    <li>Music</li>
+    <div class="skillrate" data-width="18%" style="width: 0;"><center>18%</center></div>
+
+    <li>Sports</li>
+    <div class="skillrate" data-width="44%" style="width: 0;"><center>44%</center></div>
+  </ul>
+</div>
+
+<style>
+  .skill {
+    background-color: #1e1e2f;
+    padding: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
+    color: #e0d1ff;
+  }
+
+  .skill ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .skill li {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+  .skillrate {
+    height: 20px;
+    background-color: #a855f7;
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+    opacity: 0.6;
+    color: white;
+    margin-bottom: 15px;
+    width: 0;
+    transition: width 2s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .skillrate center {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    line-height: 20px;
+    font-weight: bold;
+    user-select: none;
+  }
+</style>
+<script src="PortfolioScript.js"></script>
+
 
     <div class="project">
         <center><h2>Web Development Projects</h2></center>
@@ -74,19 +135,19 @@
             <div class="slide fade">
                 <h3>School Website</h3>
                 <p>A responsive School Website built with HTML, CSS.</p>
-                <a href="file:///C:/Users/Jadesh%20M/Documents/Shrujan%20J%20M1/Desktop/RanchoLabs%20Web%20Development/WebPage/School%20Webpage%20Home.html">School Website</a>
+                <button onclick="window.open('C:\Users\Jadesh M\Documents\Shrujan J M1\Desktop\RanchoLabs Web Development\VS Code\School Webpage Home.html')">Open</button>
             </div>
 
             <div class="slide fade">
                 <h3>Issac Newton</h3>
                 <p>Website about Issac Newton and his Inventions.</p>
-                <a href="file:///C:/Users/Jadesh%20M/Documents/Shrujan%20J%20M1/Desktop/RanchoLabs%20Web%20Development/WebPage/Issac%20Newton.html">Issac Newton</a>
+                <button onclick="window.open('C:\Users\Jadesh M\Documents\Shrujan J M1\Desktop\RanchoLabs Web Development\VS Code\Issac Newton.html')">Open</button>
             </div>
 
             <div class="slide fade">
                 <h3>Student Registration Form</h3>
                 <p>Registration form for a Admission in a School.</p>
-                <a href="file:///C:/Users/Jadesh%20M/Documents/Shrujan%20J%20M1/Desktop/RanchoLabs%20Web%20Development/WebPage/Student%20Registration%20Form.html">Student Registration Form</a>
+                <button onclick="window.open('C:\Users\Jadesh M\Documents\Shrujan J M1\Desktop\RanchoLabs Web Development\VS Code\Student Registration Form.html')">Open</button>
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -110,7 +171,7 @@
     </center>
 
     <center>
-        <div class="contactinfo">
+        <div class="contactinfo" id="contactinfo">
             <center><h2>Contact Info</h2></center>
             <p>Email:</p>
             <email><a href="mailto:shrujanjm@gmail.com">shrujanjm@gmail.com</a></email><br><br>
@@ -137,7 +198,7 @@
 
     <footer>
         <div class="footerimage">
-        <img src="C:\Users\Jadesh M\Documents\Shrujan J M1\Downloads\IMG_20231112_192734530~2 (2).png">
+        <img src="C:\Users\Jadesh M\Documents\Shrujan J M1\Desktop\RanchoLabs Web Development\VS Code\Media\IMG_20231112_192734530~2 (2).png">
         </div>
         <p>&copy; 2025 Shrujan J M. All Rights Reserved.</p>
     </footer>
