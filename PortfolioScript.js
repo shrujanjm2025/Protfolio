@@ -1,3 +1,21 @@
+        function animateSkills() {
+    const skillSection = document.getElementById('myskills');
+    const skillBars = document.querySelectorAll('.skillrate');
+
+    const sectionPos = skillSection.getBoundingClientRect().top;
+    const screenPos = window.innerHeight;
+
+    if (sectionPos < screenPos - 100) {
+      skillBars.forEach(bar => {
+        bar.style.width = bar.getAttribute('data-width');
+      });
+      window.removeEventListener('scroll', animateSkills);
+    }
+  }
+
+  window.addEventListener('scroll', animateSkills);
+  window.addEventListener('load', animateSkills);
+
 let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -27,20 +45,3 @@ let slideIndex = 1;
         function scrollToContactinfo() {
             document.getElementById("contactinfo").scrollIntoView({ behavior: "smooth" });
     }
-        function animateSkills() {
-    const skillSection = document.getElementById('myskills');
-    const skillBars = document.querySelectorAll('.skillrate');
-
-    const sectionPos = skillSection.getBoundingClientRect().top;
-    const screenPos = window.innerHeight;
-
-    if (sectionPos < screenPos - 100) {
-      skillBars.forEach(bar => {
-        bar.style.width = bar.getAttribute('data-width');
-      });
-      window.removeEventListener('scroll', animateSkills);
-    }
-  }
-
-  window.addEventListener('scroll', animateSkills);
-  window.addEventListener('load', animateSkills);

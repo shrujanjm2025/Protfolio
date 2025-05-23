@@ -97,7 +97,7 @@
             transform: translateX(5px); /* Slightly shift link to the right */
         }
 
-/* .skill {
+        .skill {
     background-color: #1e1e2f;
     padding: 20px;
     margin-bottom: 10px;
@@ -137,9 +137,7 @@
     line-height: 20px;
     font-weight: bold;
     user-select: none;
-  } */
-
-
+  }
         .skillrate:hover {
             transform: scale(1.05);
             box-shadow: 0 0 30px rgba(168, 85, 247, 0.8);
