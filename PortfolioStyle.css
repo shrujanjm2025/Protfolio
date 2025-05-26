@@ -15,10 +15,6 @@
             transition: transform 0.3s ease, color 0.3s ease;
         }
 
-        h1:hover, h2:hover, h3:hover, h4:hover, p:hover {
-            transform: translateY(-5px); /* Slightly lift text on hover */
-        }
-
         header {
             background: #1e1e2f;
             text-align: center;
@@ -63,7 +59,7 @@
             color: #e0d1ff;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
+        
         .contactbox:hover, .contactinfo:hover, .skill:hover, .project:hover, .aboutme:hover, .academy:hover {
             transform: translateY(-10px); /* Lift the container when hovered */
             box-shadow: 0 0 20px rgba(168, 85, 247, 0.6); /* Add shadow on hover */
@@ -156,6 +152,7 @@
         }
 
         .slide {
+            background-color: #1e1e2f;
             display: none;
             text-align: center;
             animation: fade 1s;
