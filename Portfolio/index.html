@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="PortfolioStyle.css">
+</head>
+<body>
+    <script src="PortfolioScript.js"></script>
+    <header id="header">
+        <h1>PORTFOLIO</h1>
+    </header>
+
+    <center>
+        <div class="buttoncontainer">
+            <button onclick="scrollToProfile()">Profile</button>
+            <button onclick="scrollToAboutme()">About Me</button>
+            <button onclick="scrollToMyskills()">My Skills</button>
+            <button onclick="scrollToContactinfo()">Contact Info</button>
+        </div>
+    </center>
+
+    <center><h2>I am Shrujan a</h2></center>
+    <center><h1>WEB DEVELOPER</h1></center>
+    <center><h3>Based in</h3></center>
+    <center><h2>INDIA</h2></center>
+
+    <center>
+        <img src="Media\IMG_20231112_192734530~2 (2).png">
+    </center>
+
+        <div class="aboutme" id="aboutme">
+            <center><h2>About Me</h2></center>
+            <p>
+                Hi, I'm a passionate web designer and developer with a love for creativity and technology.<br><br>
+                I started coding and designing websites when I was just 5 years old. What began as curiosity quickly turned into a lifelong passion. Over the years, I've honed my skills in web design, development, and user experience — always aiming to create clean, modern, and functional websites.<br><br>
+                I'm also proud to say that I’ve consistently been the topper in my class, balancing academic excellence with my growing interest in tech. Learning has always been something I enjoy, whether it’s mastering a new coding language or exploring the latest trends in design.<br><br>
+                Looking ahead, my dream is to become a successful businessman in the field of web development. I want to build innovative products, work with talented people, and create digital solutions that make an impact. For me, it’s not just about building websites — it’s about building a future.
+            </p>
+        </div>
+
+        <div class="academy">
+            <center><h2>Academic Achievements</h2></center>
+            <p>
+    I’ve consistently been a topper since a young age, and I was proud to receive the all-rounder award in both 1st and 2nd grade.<br><br>
+
+    My journey has never been limited to academics alone - I’ve always believed in exploring different fields and developing a well-rounded personality.<br><br>
+
+    Alongside my studies, I actively participate in sports, pursue web development, and have a growing interest in finance.<br><br>
+
+    Whether it's learning how to build websites, understanding how money works, or playing on the field, I love pushing myself to grow in every area.<br><br>
+
+    I believe that being curious, creative, and committed, is the key to long-term success.
+</p>
+        </div>
+
+        <!-- Replace your existing skill section with this -->
+<!-- Skill Section HTML -->
+<div class="skill" id="myskills">
+  <center><h2>My Skills</h2></center>
+  <ul>
+    <li>Dancing</li>
+    <div class="skillrate" data-width="34%" style="width: 0;"><center>34%</center></div>
+
+    <li>Singing</li>
+    <div class="skillrate" data-width="21%" style="width: 0;"><center>21%</center></div>
+
+    <li>Web Development</li>
+    <div class="skillrate" data-width="29%" style="width: 0;"><center>29%</center></div>
+
+    <li>Art</li>
+    <div class="skillrate" data-width="52%" style="width: 0;"><center>52%</center></div>
+
+    <li>Robotics</li>
+    <div class="skillrate" data-width="47%" style="width: 0;"><center>47%</center></div>
+
+    <li>Music</li>
+    <div class="skillrate" data-width="18%" style="width: 0;"><center>18%</center></div>
+
+    <li>Sports</li>
+    <div class="skillrate" data-width="44%" style="width: 0;"><center>44%</center></div>
+  </ul>
+</div>
+
+    <div class="project">
+        <center><h2>Web Development Projects</h2></center>
+        <div class="slider-box">
+  <div class="slide">
+    <h3>School Website</h3>
+    <p>A responsive School Website built with HTML, CSS.</p>
+    <button onclick="window.open('School Webpage Home.html')">Open</button>
+  </div>
+
+  <div class="slide">
+    <h3>Isaac Newton</h3>
+    <p>Website about Isaac Newton and his Inventions.</p>
+    <button onclick="window.open('Issac Newton.html')">Open</button>
+  </div>
+
+  <div class="slide">
+    <h3>Student Registration Form</h3>
+    <p>Registration form for Admission in a School.</p>
+    <button onclick="window.open('Student Registration Form.html')">Open</button>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+
+    </div>
+
+    <center>
+        <div class="contactbox">
+            <form>
+                <center><h2>Contact Me</h2></center>
+                <label for="fname">Your Name:</label><br>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" style="height: 100px; width: 300px;"></textarea><br><br>
+                <a href="mailto:shrujanjm@gmail.com">
+                <button>Send Message</button>
+                </a>
+            </form>
+        </div>
+    </center>
+
+    <center>
+        <div class="contactinfo" id="contactinfo">
+            <center><h2>Contact Info</h2></center>
+            <p>Email:</p>
+            <email><a href="mailto:shrujanjm@gmail.com">shrujanjm@gmail.com</a></email><br><br>
+
+            <p>Address:</p>
+            <address>
+                <a href="https://www.google.com/maps/place/...">
+                    SHREE HARI RESIDENCY,<br>
+                    2nd Cross Rd,<br>
+                    Vyalikaval HBCS Layout,<br>
+                    Nagavara,<br>
+                    Bengaluru,<br>
+                    Karnataka 560045
+                </a>
+            </address>
+
+            <p>Phone:</p>
+            <phone>
+                <a href="tel:9035032729">9035032729</a><br><br>
+                <a href="tel:9880546863">9880546863</a>
+            </phone>
+        </div>
+    </center>
+
+    <footer>
+        <div class="footerimage">
+        <img src="Media\IMG_20231112_192734530~2 (2).png">
+        </div>
+        <p>&copy; 2025 Shrujan J M. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
